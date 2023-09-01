@@ -1,4 +1,8 @@
 1ere modif
 
+<<<<<<< Updated upstream
 2eme modif
 3e modif
+=======
+modif depuis nouvelle branche
+>>>>>>> Stashed changes

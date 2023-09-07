@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yoyoyo</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <fieldset rows="90">
+            <legend>Infos personnelles</legend>
+                <label for="name">Prénom:</label>
+                <input type="text" placeholder="Ex: Forest" id="prenom" minlenght="2" maxlenght="20">
+                    <br>
+                <label for="nom">Nom:</label>
+                <input type="text" placeholder="Ex: Mbappé-Lottin" id="Nom" minlenght="2" maxlenght="20">
+                    <br>
+                <label for="email">E-mail:</label>
+                <input type="text" placeholder="Ex: monMail@FAI.com" id="email">
+                    <br>
+                <label for="Numéro">Numéro:</label>
+                <input type="Number" placeholder="Ex: 01 02 03 04" id="numero">
+                    <br>
+                <label for="password">Mot de passe:</label>
+                <input type="password" placeholder="Mot de passe" id="password" minlenght="8" maxlenght="30">
+                    <br>
+                <label for="age">Âge:</label>
+                <input type="number" placeholder="Ex: 15" id="age" >
+                    <br>
+                <label for="commentaires">Laissez un commentaire:</label>
+                    <br>
+                <textarea rows="10" cols="70" placeholder="GRRRR bawww ça va la teamax?" id="commentaires"></textarea>
+                    <br>
+                <label for="date">Date de mon commentaire:</label>
+                <input type="date" placeholder="jj/mm/aaaa" id="date" >
+                    <br>
+                <label for="fichier">Ma photo:</label> 
+                <input type="file" value="Choisir un fichier" id="fichier" >
+        </fieldset>
+        <fieldset>
+            <legend>Vous préférez:</legend>
+                <label for="lehtml">Le HTML</label>
+                <input type="checkbox" checked>
+                    <br>
+                <label for="lecss">Le CSS</label>
+                <input type="checkbox">
+                    <br>
+                <label for="lejavascript">Le JavaScript</label>
+                <input type="checkbox">
+                    <br>
+                <label for="nerienfaire">Ne rien faire</label>
+                <input type="checkbox">
+                    <br>
+        </fieldset>
+        <fieldset>
+            <legend>Vous vous levez:</legend>
+                <label for="lematin">Le matin</label>
+                <input type="radio" id="lematin" name="onslevekan" value="lematin">
+                    <br>
+                <label for="lemidi">Le midi</label>
+                <input type="radio" id="lemidi" name="onslevekan" value="lemidi">
+                    <br>
+                <label for="lesoir">Le soir</label>
+                <input type="radio" id="lesoir" name="onslevekan" value="lesoir">
+                    <br>
+                <label for="enretard">En retard !</label>
+                <input type="radio" id="enretard" name="onslevekan" value="enretard" checked>
+                    <br>
+        </fieldset>
+        <fieldset>
+            <legend>Fin du formulaire</legend>
+                <label for="vousenavezassez">Vous en avez assez ?</label>
+                <select id="listederoulante">
+                    <optgroup label="Team Teamax">
+                        <option>J'en veux plus</option>
+                        <option>Au MAX</option>
+                        <option>Max(ime)(fucktolrom)</option>
+                    </optgroup>
+                    <optgroup label="Team Teamin">
+                        <option>Au MIN</option>
+                        <option>Stéphane plazza</option>
+                    </optgroup>
+                </select>
+                <br>
+                <input type="submit" value="Envoyer" id="envoyer" >
+                <input type="reset" value="Réinitialiser" id="envoyer" >
+        </fieldset>
+    </form>
+    
+</body>
+</html>

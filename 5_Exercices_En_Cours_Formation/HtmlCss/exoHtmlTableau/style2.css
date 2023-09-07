@@ -1,0 +1,28 @@
+table{
+    border : 3px black solid;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: 50px;
+    font-style: italic;
+    font-family: Comic sans ms;
+}
+
+caption{
+    color: black;
+}
+
+th{
+    border: black 2px solid;
+
+}
+
+td{
+    border: black 2px solid;
+    padding: 20px;
+}
+
+table{
+    background: linear-gradient(rgb(251, 255, 1), rgb(30, 255, 0), rgb(255, 0, 191) );
+    color: red;
+    text-shadow: 2px 2px 2px white;
+}

@@ -1,0 +1,20 @@
+table{
+    border : 5px purple double;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: 50px;
+}
+
+caption{
+    color: purple;
+}
+
+th{
+    border: black 2px solid;
+    background-color: lightskyblue
+}
+
+td{
+    border: black 2px solid;
+    padding: 30px;
+}

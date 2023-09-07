@@ -1,0 +1,34 @@
+
+h1{
+    color: #ff0000;
+    text-align: center;
+    font-size: 120%;
+}
+h3{
+    color: blue;
+    font-size: 110%;
+}
+.texteFondGris{
+    background-color: grey;
+}
+strong{
+    font-weight: normal;
+    color: yellowgreen;
+}
+em{
+    font-style: normal;
+    color: orange;
+    font-size: 100%;
+    text-decoration: underline;
+}
+.texteFondRose{
+    background-color:  pink;
+}
+#titreVert{
+    text-align: right;
+    color:green;
+    text-decoration: underline;
+}
+p{
+    font-size: 30%;
+}

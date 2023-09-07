@@ -1,0 +1,54 @@
+header{
+    text-align: center;
+}
+
+body{
+    background: radial-gradient(#CCDAE0, #EDF2F4)
+}
+
+h1{
+    color: #EF233C;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+article{
+    border: 1px black solid;
+
+}
+
+#banniereRl{
+    height: 200px;
+    width: 800px;
+}
+
+#photoArticle{
+    height: 100px;
+    width: 200px;
+}
+
+footer{
+    position: absolute;
+    right: 1%;
+    color: red;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a:link{
+    color: #D90429 ;
+}
+
+a:visited{
+    color: grey;
+}
+
+a:hover{
+    color: #2B2D42;
+}
+
+span{
+    color: red;
+}

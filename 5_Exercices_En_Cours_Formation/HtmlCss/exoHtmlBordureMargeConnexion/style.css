@@ -1,0 +1,43 @@
+
+h1{
+    text-align: center;
+}
+#boutons{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#bouton2, #bouton3{
+    padding: 5px;
+}
+#bouton2:hover, #bouton3:hover{
+    padding: 5px;
+    background-color: black;
+    color:rgb(255, 255, 255)
+}
+
+#bouton2{
+    margin-right: 10px;
+}
+
+
+#margePseudoMdp{
+    padding-left: 30px;
+}
+
+#pseudo, #mdp{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#checkbox{
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+form{
+    background-color: rgb(184, 184, 184);
+    border: 1px black solid;
+    width: 400px;
+    height: 250px;
+}

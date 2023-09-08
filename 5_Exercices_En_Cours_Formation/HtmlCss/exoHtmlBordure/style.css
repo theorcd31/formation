@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    background-color: rgb(141, 44, 141);
+}
+
+p{
+    border: 2px rgb(0, 230, 0) solid;
+    background-color: rgb(180, 180, 180);
+}
+
+.paragraphe1{
+    margin: 0;
+    height: 100px;
+}
+
+.paragraphe2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right:5px;
+    width: 50%;
+}
+
+.paragraphe3{
+    margin:auto;
+    height: 200px;
+    width: 200px;
+}

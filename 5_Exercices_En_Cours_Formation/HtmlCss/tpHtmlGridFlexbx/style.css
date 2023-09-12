@@ -1,0 +1,36 @@
+
+section{
+    border-radius: 20px;
+    border-style: solid;
+    border-color: blue;
+}
+
+.fondGris{
+    background-color: grey;
+}
+
+
+body{
+    margin: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+#all{
+    display: flex;
+    align-items: center;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.text1{
+    grid-column: 2;
+    grid-row: 6;
+}

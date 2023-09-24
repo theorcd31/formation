@@ -1,4 +1,37 @@
 body{
-    background-color: grey;
-    
+    background-color: rgb(190, 190, 190);
+}
+
+#container{
+    display: flex;
+}
+
+article{
+    border: 1px black solid;
+    text-align: center;
+}
+
+p{
+    font-size: smaller;
+}
+
+img{
+    margin-top: 2%;
+}
+
+input{
+    text-align: center;
+}
+
+div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+@media (max-width:480px) {
+    .banner{
+        width: 100%;
+    }
+
 }

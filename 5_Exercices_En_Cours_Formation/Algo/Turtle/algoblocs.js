@@ -997,7 +997,7 @@ down();
 rayon = rayon + 25;
 }
 
-*/ 
+
 
 //D14
 //Initialisation
@@ -1010,13 +1010,18 @@ changeColor(color.green);
 for (let i=0 ; i<2 ; i++){
     let longueur;
     longueur=25;
-    for (let j=0 ; i<4 ; j++){
+    for (let j=0 ; j<4 ; j++){
         forward(longueur);
         right(90);
         forward(longueur);
         left(90);
         longueur = longueur + 25;
     }
-right(90);
-right(90);
+    right(90);
+    right(90);
 }
+
+*/ 
+
+//D15
+//initialisation

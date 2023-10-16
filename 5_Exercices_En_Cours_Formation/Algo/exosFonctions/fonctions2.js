@@ -75,6 +75,12 @@ fonction euclide(a, b)
 ```
 Écrire cette fonction.
 */
+function euclide(a,b){
+    if(b=0){
+        return a;
+    }
+    
+}
 
 /*
 À la main, calculer `euclide(6,10)`.

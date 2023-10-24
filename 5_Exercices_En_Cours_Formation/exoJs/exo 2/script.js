@@ -132,97 +132,110 @@
 //   location.reload();
 // }
 
-//EXERCICE 19 DOM
-//récupération de la div (tasks)
-  const liste = document.querySelector('#tasks');
-//fonction pour ajouter une tâche
-  function addTask(){
-//récupération de l'input (task)
-      const valeur = document.querySelector('#task').value;
-//création du container (container)
-      const container = document.createElement('div');
-//ajout de l'attribut class : container (div container)
-      container.setAttribute('class', 'container');
-//création du paragraphe
-      const paragraphe = document.createElement('p');
-      paragraphe.textContent = valeur;
-      const btUpdate = document.createElement('button');
-//création du bouton update
-      btUpdate.textContent = "Update";
-      btUpdate.setAttribute('onclick','updateTask(this)');
-      btUpdate.setAttribute('id','update');
-//création du bouton delete
-      const btDelete = document.createElement('button');
-      btDelete.textContent = "Delete";
-      btDelete.setAttribute('onclick','deleteTask(this)');
-//ajouter les enfants à la div (container)
-      container.appendChild(paragraphe);
-      container.appendChild(btUpdate);
-      container.appendChild(btDelete);
-//ajouter la div container à liste
-      liste.appendChild(container);
-  }
-//fonction qui va supprimer tous les enfants de tasks
-  function delAllTask(){
-      while(liste.firstChild){
-          liste.removeChild(liste.firstChild);
-      }
-  }
-//fonction pour recharger la page
-  function reload(){
-      location.reload();
-  }
-  //fonction pour supprimer la tache (div container parente)
-  function deleteTask(e){
-      e.parentNode.remove();
-  }
+// //EXERCICE 19 DOM
+// //récupération de la div (tasks)
+//   const liste = document.querySelector('#tasks');
+// //fonction pour ajouter une tâche
+//   function addTask(){
+// //récupération de l'input (task)
+//       const valeur = document.querySelector('#task').value;
+// //création du container (container)
+//       const container = document.createElement('div');
+// //ajout de l'attribut class : container (div container)
+//       container.setAttribute('class', 'container');
+// //création du paragraphe
+//       const paragraphe = document.createElement('p');
+//       paragraphe.textContent = valeur;
+//       const btUpdate = document.createElement('button');
+// //création du bouton update
+//       btUpdate.textContent = "Update";
+//       btUpdate.setAttribute('onclick','updateTask(this)');
+//       btUpdate.setAttribute('id','update');
+// //création du bouton delete
+//       const btDelete = document.createElement('button');
+//       btDelete.textContent = "Delete";
+//       btDelete.setAttribute('onclick','deleteTask(this)');
+// //ajouter les enfants à la div (container)
+//       container.appendChild(paragraphe);
+//       container.appendChild(btUpdate);
+//       container.appendChild(btDelete);
+// //ajouter la div container à liste
+//       liste.appendChild(container);
+//   }
+// //fonction qui va supprimer tous les enfants de tasks
+//   function delAllTask(){
+//       while(liste.firstChild){
+//           liste.removeChild(liste.firstChild);
+//       }
+//   }
+// //fonction pour recharger la page
+//   function reload(){
+//       location.reload();
+//   }
+//   //fonction pour supprimer la tache (div container parente)
+//   function deleteTask(e){
+//       e.parentNode.remove();
+//   }
 
-  let statut = true 
+//   let statut = true 
+// //function pour mettre à jour le texte de la tache courante
+// function updateTask(e){
+//   if(statut == true){
+//     //récupérer valeur du paragraphe
+//     const par = e.parentNode.firstChild.textContent;
+//     //créer input type texte
+//     const text = document.createElement("input");
+//     text.setAttribute("type", "text");
+//     text.setAttribute("id", "text2");
+//     //Assigner à input
+//     text.value = par ;
+//     //remplacer paragraphe par input
+//     e.parentNode.replaceChild(text, e.parentNode.firstChild);
+//     //Statut passe à false
+//     statut = false
+//   } else {
+//     //récupérer la valeur de l'input
+//     const valeurInpt = e.parentNode.firstChild.value;
+//     const par = document.createElement('p')
+//     par.textContent = valeurInpt ;
+//     e.parentNode.replaceChild(par, e.parentNode.firstChild)
+
+//   statut = true
+//   }
+// }
+
+//EXERCICE 20 DOM
 //function pour mettre à jour le texte de la tache courante
 function updateTask(e){
-  if(statut == true){
-    //récupérer valeur du paragraphe
-    const par = e.parentNode.firstChild.textContent;
-    //créer input type texte
-    const text = document.createElement("input");
-    text.setAttribute("type", "text");
-    text.setAttribute("id", "text2");
-    //Assigner à input
-    text.value = par ;
-    //remplacer paragraphe par input
-    e.parentNode.replaceChild(text, e.parentNode.firstChild);
-    //Statut passe à false
-    statut = false
-  } else {
-    //récupérer la valeur de l'input
-    const valeurInpt = e.parentNode.firstChild.value;
-    const par = document.createElement('p')
-    par.textContent = valeurInpt ;
-    e.parentNode.replaceChild(par, e.parentNode.firstChild)
-
-  statut = true
+  //test si statut est égale à true
+  if(statut){
+      //récupération de la valeur de la tâche (paragraphe)
+      const valeur = e.parentNode.firstChild.textContent;
+      //création de l'élément input
+      const input = document.createElement('input');
+      input.setAttribute('type', 'text');
+      //remplacer le paragraphe par un input
+      e.parentNode.replaceChild(input, e.parentNode.firstChild);
+      //assigner la valeur
+      e.parentNode.firstChild.value = valeur;
+      //changer la valeur de statut 
+      statut = false;
   }
-
-
-
-
-
-
-  // //récupération de l'input (task)
-  // const valeur = document.querySelector('#task').value;
-  // //test si valeur est différent de vide
-  // if(valeur != ""){
-  //     //modifier depuis le parent -> 1 enfant
-  //     e.parentNode.firstChild.textContent = valeur;
-  //     //V2 modifier depuis le parent 1 élément de la nodelist (HTML Collection)
-  //     //e.parentNode[0].textContent = valeur;
-  //     //V3 modifier depuis l'élément frére ou soeur précédent
-  //     //e.previousElementSibling.textContent = valeur;
-  // }
-  // //test si valeur est vide (redonne la même valeur)
-  // else{
-  //     e.parentNode.firstChild.textContent = e.parentNode.firstChild.textContent
-  // }
+  //test sinon statut est égal à false
+  else{
+      //récupération la valeur de la tâche (input)
+      const valeur = e.parentNode.firstChild.value;
+      //créer un nouvel élément paragraphe
+      const paragraphe = document.createElement('p');
+      //remplacer l'input par le paragraphe
+      e.parentNode.replaceChild(paragraphe, e.parentNode.firstChild);
+      //Assigner la valeur au paragraphe
+      e.parentNode.firstChild.textContent = valeur;
+      //changer la valeur de statut
+      statut = true;
+  }
 }
 
+localStorage.setItem("Tasks", "localStorage")
 
+console.log(localStorage.getItem("Test"));

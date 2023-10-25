@@ -1,3 +1,5 @@
+localStorage.getItem("tasks") == null ? localStorage.setItem("tasks", []) : false
+let liste = document.querySelector('#tasks')
 // //EXERCICE 14 DOM
 // const titre = document.querySelector ("h1");
 // const texte = document.querySelector ("div");
@@ -204,38 +206,123 @@
 //   }
 // }
 
-//EXERCICE 20 DOM
-//function pour mettre à jour le texte de la tache courante
-function updateTask(e){
-  //test si statut est égale à true
-  if(statut){
-      //récupération de la valeur de la tâche (paragraphe)
-      const valeur = e.parentNode.firstChild.textContent;
-      //création de l'élément input
-      const input = document.createElement('input');
-      input.setAttribute('type', 'text');
-      //remplacer le paragraphe par un input
-      e.parentNode.replaceChild(input, e.parentNode.firstChild);
-      //assigner la valeur
-      e.parentNode.firstChild.value = valeur;
-      //changer la valeur de statut 
-      statut = false;
-  }
-  //test sinon statut est égal à false
-  else{
-      //récupération la valeur de la tâche (input)
-      const valeur = e.parentNode.firstChild.value;
-      //créer un nouvel élément paragraphe
-      const paragraphe = document.createElement('p');
-      //remplacer l'input par le paragraphe
-      e.parentNode.replaceChild(paragraphe, e.parentNode.firstChild);
-      //Assigner la valeur au paragraphe
-      e.parentNode.firstChild.textContent = valeur;
-      //changer la valeur de statut
-      statut = true;
-  }
-}
+// //EXERCICE 20 DOM
+// }
+// function addTask(){
+    
+    
+//         //le code ci-dessous  : récupére la clé tasks dans le localstorage 
+//     //et le met à jour avec la valeur saisie dans l'input du formulaire
+//     //récupération de l'input ('#task)
+//     let valeur = document.querySelector('#task').value;
+//     //récupérer dans une variable la valeur clé ('tasks')
+//     let tasks = localStorage.getItem('tasks');
+//     //test si la clé tasks dans localstorage est vide
+//     if(tasks==""){
+//     tasks+= valeur;
+//     }
+//     //test sinon elle n'est pas vide
+//     else{
+//         //transforme en tableau
+//         tasks = tasks.split(",");
+//         //ajoute la valeur de l'input au tableau
+//         tasks.push(valeur);
+//     }
+//     //mise à jour de la clé
+//     localStorage.setItem('tasks',tasks);
+    
+//     //création du container (container)
+//           const container = document.createElement('div');
+//     //ajout de l'attribut class : container (div container)
+//           container.setAttribute('class', 'container');
+//     //création du paragraphe
+//           const paragraphe = document.createElement('p');
+//           paragraphe.textContent = valeur;
+//           const btUpdate = document.createElement('button');
+//     //création du bouton update
+//           btUpdate.textContent = "Update";
+//           btUpdate.setAttribute('onclick','updateTask(this)');
+//           btUpdate.setAttribute('id','update');
+//     //création du bouton delete
+//           const btDelete = document.createElement('button');
+//           btDelete.textContent = "Delete";
+//           btDelete.setAttribute('onclick','deleteTask(this)');
+//     //ajouter les enfants à la div (container)
+//           container.appendChild(paragraphe);
+//           container.appendChild(btUpdate);
+//           container.appendChild(btDelete);
+//     //ajouter la div container à liste
+//           liste.appendChild(container);
+//       }
 
-localStorage.setItem("Tasks", "localStorage")
 
-console.log(localStorage.getItem("Test"));
+// function showAllTask(){
+//     let cle = localStorage.getItem('tasks')
+//     cle = cle.split(',')
+//     for (let i=0 ; i < cle.length ; i++){
+//         console.log(cle[i])
+//         //création du container (container)
+//         const container = document.createElement('div');
+//         //ajout de l'attribut class : container (div container)
+//               container.setAttribute('class', 'container');
+//         //création du paragraphe
+//               const paragraphe = document.createElement('p');
+//               paragraphe.textContent = cle[i];
+//               const btUpdate = document.createElement('button');
+//         //création du bouton update
+//               btUpdate.textContent = "Update";
+//               btUpdate.setAttribute('onclick','updateTask(this)');
+//               btUpdate.setAttribute('id','update');
+//         //création du bouton delete
+//               const btDelete = document.createElement('button');
+//               btDelete.textContent = "Delete";
+//               btDelete.setAttribute('onclick','deleteTask(this)');
+//         //ajouter les enfants à la div (container)
+//               container.appendChild(paragraphe);
+//               container.appendChild(btUpdate);
+//               container.appendChild(btDelete);
+//         //ajouter la div container à liste
+//               liste.appendChild(container);
+//     }
+// }
+
+
+// //EXERCICE 21 DOM
+// //récupération des éléments HTML
+// const bt = document.querySelector('#bt')
+// //ajout d'un événement click (bouton 1)
+// bt.addEventListener('click', ()=>{
+      
+//       let inputs = document.querySelectorAll('input[type="text"]');
+//       const nomProduit = document.querySelector('#nom');
+//       const prix = document.querySelector('#prixHt');
+//       const nombre = document.querySelector('#quantite');
+//       const par = document.querySelector('#resultat');
+//       let verif = 0;
+
+//       for (let i=0 ; i<inputs.length ; i++){
+//             if(inputs[i].value ==""){
+//                  inputs[i].style.backgroundColor = "rgba(255,0,0,0.8)";
+//             } else {
+//                   inputs[i].style.backgroundColor = "rgba(0,255,0,0.8)";
+//                   verif++;
+//             }
+//             if(verif == 3){
+//                 let prixTTC = ((prix.value*nombre.value)*1.20);
+//                 par.textContent = `Le prix est égal à ${prixTTC.toFixed(2)} €`;
+//             }
+//       }
+// })
+
+//EXERCICE 22 DOM
+const mail=document.querySelector('#email')
+
+let regexEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+email.addEventListener('keyup', ()=>{
+      if(mail.value.match(regexEmail)){
+            mail.style.backgroundColor = "red"
+      } else {
+            mail.style.backgroundColor = "green"
+      }
+})

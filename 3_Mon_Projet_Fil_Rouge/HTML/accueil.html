@@ -3,40 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tests - Cyberpunk 2077</title>
+    <link rel="stylesheet" href="styleTel.css">
+    <script src="script.js" async></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-
+    <!-- iconeEtoile -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- iconeReseaux-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
+
 <body>
+    <!-- menu burger -->
+    <nav>
+        <header>
+            <img class="logoOHG" src="photoLogos/logoOHG.png" alt="Logo OHG">
+            <div class="containerH1">
+                <h1><span>Overhaul</span>Games</h1>
+            </div>
+
+            <div class="containerBurger">
+                <img class="burger" src="photoLogos/logoBurger.PNG" alt="logo burger">
+            </div>
+        </header>
+    </nav>
+<!-- header  -->
     <header>
-        <img class="logo" src="photoLogos/logoOHG.png" alt="Logo OHG">
-        <h1><span>Overhaul</span>Games</h1>
-        <ul>
+        <img class="logoOHG" src="photoLogos/logoOHG.png" alt="Logo OHG">
+        <div class="containerH1">
+            <h1><span>Overhaul</span>Games</h1>
+        </div>
+        <div class="containerBurger">
+            <img class="burger" src="photoLogos/logoBurger.PNG" alt="logo burger">
+        </div>
+    </header>
+
+    <!-- haut de page  -->
+
+    <section class="grillePrincipale">
+        <article class="recherche">
+            <input type="search" id="search" value="" placeholder="Recherche...">
+        </article>
+            <img class="logoFiltrage" src="photoLogos/logoFiltre.PNG">
+            <div class="trait"></div>
+        <!-- icone fleche -->
+        <img class="flecheRetour" src="photoLogos/iconRetour.PNG">
+        <!-- etoile -->
+        <i class="star fa-regular fa-star fa-lg" style="color: #F46507;"></i>
+        <!-- titre -->
+        <div class="monH2">
+            <h2 class="titre thefirsth2">Cyberpunk 2077</h2>
+            <h3 class="titre thefirsth3">(Phantom Liberty)</h3>
+        </div>
+    </section>
+
+    <!-- presentation jeu  -->
+
+    <span class="presentation">
+        <img class="cyberpunkCover" src="photoJeux/cp77-phantom-liberty-cover.jpeg">
+    </span>
+    <section id="infos">
+        <div class="actu">
+            <p class="sousTitre blanc">Actualités</p>
+            <img class="logo" src="photoLogos/logoActualites.PNG">
+        </div>
+        <div class="avis">
+            <p class="sousTitre blanc">Avis</p>
+            <img class="logo" src="photoLogos/logoCommentaire.PNG">
+        </div>
+        <div class="forum">
+            <p class="sousTitre blanc">Forum</p>
+            <img class="logo" src="photoLogos/logoForum.PNG">
+        </div>
+    </section>
+    <article id="text">
+        <p class="par premier">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore ullam reiciendis
+            est blanditiis quibusdam, ab dolore sequi id quaerat vero temporibus laboriosam ea incidunt? 
+            Id libero maiores eligendi ducimus maxime. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+        </p>
+        <p class="par deuxieme">
+            Inventore ullam reiciendis est blanditiis quibusdam, ab dolore sequi id quaerat vero temporibus laboriosam ea incidunt? 
+            Id libero maiores eligendi ducimus maxime consectetur adipisicingelit. Aliquam numquam id enim minima corporis ipsam quidem, nulla pariatur quis ad laborum 
+            xpedita et cumque ipsa? Omnis labore est a officiis!
+        </p>
+    </article>
+    <!-- tableaux  -->
+    <section id="tabEntier">
+        <article id="grilleTab">
+                <h3 class="sousTitre theSecondH3">
+                    Points Forts
+                </h3>
+                <ul class="par">
+                    <li>
+                        Infos random
+                    </li>
+                    <li>
+                        Infos random (encore)
+                    </li>
+                    <li>
+                        Bonjour
+                    </li>
+                    <li>
+                        Le jeu est cool voilà
+                    </li>
+                    <li>
+                        J'ai pas fait le DLC 
+                    </li>
+                </ul>
+        </article>
+        <article id="grilleTabDeux">
+            <h3 class="sousTitre theThirdH3">
+            Points Faibles
+        </h3>
+        <ul class="par">
             <li>
-                Tests
+                Infos random
             </li>
             <li>
-                Actualités
+                Infos random (encore)
             </li>
             <li>
-                Forums
+                Bonjour
             </li>
             <li>
-                Contact
+                Le jeu est cool voilà
             </li>
             <li>
-                Nos créations
-            </li>
-            <li>
-                Mon compte
+                J'ai pas fait le DLC 
             </li>
         </ul>
-        
-    </header>
-    
+        </article>
+    </section>
+
+    <!-- footer  -->
+        <footer>
+            <div class="traitFooter"></div>
+                <ul>
+                    <li>
+                        Accueil
+                    </li>
+                    <li>
+                        Actualités
+                    </li>
+                    <li>
+                        Newsletter
+                    </li>
+                </ul>
+                <div id="belowFooter">
+                    <ul class="secondUl">
+                        <li>Nous contacter</li>
+                        <li>Mentions légales</li>
+                    </ul>
+                    <i class="fa-brands fa-x-twitter fa-2xl" style="color: #ffffff;"></i>    
+                    <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i>
+                </div>
+               
+        </footer>
 </body>
 </html>

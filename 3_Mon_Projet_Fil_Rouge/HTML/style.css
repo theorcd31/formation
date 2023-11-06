@@ -11,6 +11,11 @@
     src: url(./font/RobotoCondensed-Bold.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: "robotoFlex";
+    src: url(./font/RobotoFlex-Regular.ttf) format("truetype");
+}
+
 header {
     background-color: #2C2626;
     display: grid;

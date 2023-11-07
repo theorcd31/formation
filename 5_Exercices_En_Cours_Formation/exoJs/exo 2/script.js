@@ -315,14 +315,34 @@ let liste = document.querySelector('#tasks')
 // })
 
 //EXERCICE 22 DOM
-const mail=document.querySelector('#email')
+let mail=document.querySelector('#email')
+const paragraphe = document.querySelector('#error')
 
 let regexEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-email.addEventListener('keyup', ()=>{
+mail.addEventListener('keyup', ()=>{
       if(mail.value.match(regexEmail)){
-            mail.style.backgroundColor = "red"
-      } else {
             mail.style.backgroundColor = "green"
+      } else {
+            mail.style.backgroundColor = "red"
       }
 })
+
+const mdp = document.querySelector('#password')
+
+let regexPassword = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{12,20}$/;
+
+password.addEventListener('blur', ()=>{
+      if(password.value.match(regexPassword)){
+            password.style.backgroundColor = "green"
+      } else {
+            password.style.backgroundColor = "red"
+      }
+      if(mail.style.backgroundColor == 'green' && regexPassword.test(password.value)){
+            paragraphe.textContent = 'Valide'
+      } else {
+            paragraphe.textContent = 'Invalide'
+      }
+})
+
+

@@ -1,4 +1,7 @@
 const fav = document.querySelector('i');
+const burgerBtn = document.querySelector('.openBurger');
+const menuBurger = document.querySelector('nav');
+const croixBtn = document.querySelector('.closeBurger');
 
 function addFav(){
     fav.classList.remove('fa-regular');
@@ -17,4 +20,10 @@ fav.addEventListener('click', ()=>{
     }
 });
 
+burgerBtn.addEventListener('click', ()=>{
+    menuBurger.style.transform = 'translateX(0vw)';
+});
 
+croixBtn.addEventListener('click', ()=>{
+    menuBurger.style.transform = 'translateX(100vw)';
+});

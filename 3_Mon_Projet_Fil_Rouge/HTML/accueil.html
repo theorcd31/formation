@@ -17,25 +17,58 @@
 <body>
     <!-- menu burger -->
     <nav>
-        <header>
-            <img class="logoOHG" src="photoLogos/logoOHG.png" alt="Logo OHG">
+        <header class="header" class="headerBurger">
+            <a href="./accueil.html" class="logoOHG"><img class="logoOHG" src="photoLogos/logoOHG.png" alt="Logo OHG"></a> 
             <div class="containerH1">
-                <h1><span>Overhaul</span>Games</h1>
+               <a href="./accueil.html"><h1><span id="changeColor">Overhaul</span>Games</h1></a> 
             </div>
 
             <div class="containerBurger">
-                <img class="burger" src="photoLogos/logoBurger.PNG" alt="logo burger">
+                <img id="burger" class="closeBurger" src="photoLogos/croixBurger.PNG" alt="logo burger">
             </div>
         </header>
+        <div class="traitNav"></div>
+        
+        <div class="grillePrincipaleBurger">
+                
+            <a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="titre blanc" target="_blank">Accueil</a>
+            <a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="titre blanc" target="_blank">Tests</a>
+            <a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="titre blanc" target="_blank">Actualités</a>
+            <a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="titre blanc" target="_blank">Forums</a>
+            <a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="titre blanc" target="_blank">Contact</a>
+            <a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="titre blanc" target="_blank">Mon compte</a>
+            <a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="titre blanc" target="_blank">Se connecter</a>
+        </div>
+
+        <article class="newsletterSection">
+            <span class="traitNewsletter"></span>
+            <div class="titre blanc">Newsletter</div>
+            <input type="search" id="recup" class="recupMail" value="" placeholder="Votre adresse mail...">
+            <button class="boutonSabonner"><span class="sabonner par blanc">S'abonner</span></button>   
+        </article>
+        
+        <footer>
+            <div class="traitFooter"></div>
+                <div id="belowFooter">
+                    <ul class="secondUl">
+                        <li>Nous contacter</li>
+                        <li>Mentions légales</li>
+                    </ul>
+                    <i class="fa-brands fa-x-twitter fa-2xl" style="color: #ffffff;"></i>    
+                    <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i>
+                </div>
+               
+        </footer>
     </nav>
 <!-- header  -->
-    <header>
-        <img class="logoOHG" src="photoLogos/logoOHG.png" alt="Logo OHG">
-        <div class="containerH1">
-            <h1><span>Overhaul</span>Games</h1>
-        </div>
+    <header class="header">
+        <a href="./accueil.html" class="logoOHG"><img class="logoOHG" src="photoLogos/logoOHG.png" alt="Logo OHG"></a> 
+            <div class="containerH1">
+               <a href="./accueil.html"><h1><span id="changeColor">Overhaul</span>Games</h1></a> 
+            </div>
         <div class="containerBurger">
-            <img class="burger" src="photoLogos/logoBurger.PNG" alt="logo burger">
+            <img id="burger" class="openBurger" src="photoLogos/logoBurger.PNG" alt="logo burger">
         </div>
     </header>
 

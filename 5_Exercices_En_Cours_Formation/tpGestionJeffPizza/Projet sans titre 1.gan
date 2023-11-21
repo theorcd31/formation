@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2023-11-13" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.2.3230" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:5" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="200" order="0"/>
+        <field id="tpd4" name="Date de début" width="75" order="1"/>
+        <field id="tpd5" name="Date de fin" width="75" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="color.recent">
+            <![CDATA[#cccccc #000000 #ff6666 #99ff99 #66ffff]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Préparation de projet" color="#99ff99" meeting="false" start="2023-11-21" duration="1" complete="0" thirdDate="2023-11-21" thirdDate-constraint="0" expand="true"/>
+        <task id="1" name="Rédaction CDC" color="#99ff99" meeting="false" start="2023-11-21" duration="3" complete="0" thirdDate="2023-11-21" thirdDate-constraint="0" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="13" name="Use case" color="#99ff99" meeting="false" start="2023-11-21" duration="1" complete="0" thirdDate="2023-12-25" thirdDate-constraint="0" expand="true"/>
+        <task id="2" name="Gestion planning" color="#99ff99" meeting="false" start="2023-11-21" duration="1" complete="0" thirdDate="2023-11-21" thirdDate-constraint="0" expand="true"/>
+        <task id="5" name="Estimation des coûts" color="#99ff99" meeting="false" start="2023-11-24" duration="1" complete="0" thirdDate="2023-11-21" thirdDate-constraint="0" expand="true"/>
+        <task id="6" name="Gestion qualité" color="#99ff99" meeting="false" start="2023-11-21" duration="1" complete="0" thirdDate="2023-11-21" thirdDate-constraint="0" expand="true"/>
+        <task id="7" name="Gestion des risques" color="#99ff99" meeting="false" start="2023-11-21" duration="1" complete="0" thirdDate="2023-11-21" thirdDate-constraint="0" expand="true"/>
+        <task id="8" name="RDV Client" color="#66ffff" meeting="false" start="2023-11-21" duration="1" complete="0" thirdDate="2023-11-21" thirdDate-constraint="0" expand="true"/>
+        <task id="9" name="Maquettage" color="#99ff99" meeting="false" start="2023-11-24" duration="4" complete="0" thirdDate="2023-11-20" thirdDate-constraint="0" expand="true">
+            <depend id="16" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="16" name="RDV Client" color="#66ffff" meeting="false" start="2023-11-30" duration="1" complete="0" thirdDate="2023-11-21" thirdDate-constraint="0" expand="true">
+            <depend id="10" type="2" difference="0" hardness="Strong"/>
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="10" name="Développement HTML" color="#ff6666" meeting="false" start="2023-12-01" duration="6" complete="0" thirdDate="2023-11-20" thirdDate-constraint="0" expand="true"/>
+        <task id="11" name="Développement CSS" color="#ff6666" meeting="false" start="2023-12-01" duration="6" complete="0" thirdDate="2023-11-22" thirdDate-constraint="0" expand="true"/>
+        <task id="12" name="Développement JS" color="#ff6666" meeting="false" start="2023-12-04" duration="9" complete="0" thirdDate="2023-12-11" thirdDate-constraint="0" expand="true"/>
+        <task id="15" name="Développement BDD" color="#ff6666" meeting="false" start="2023-12-08" duration="8" complete="0" thirdDate="2023-12-29" thirdDate-constraint="0" expand="true"/>
+        <task id="14" name="Développement PHP" color="#ff6666" meeting="false" start="2023-12-08" duration="8" complete="0" thirdDate="2023-12-29" thirdDate-constraint="0" expand="true"/>
+        <task id="18" name="Phase de testing" color="#000000" meeting="false" start="2023-12-04" duration="14" complete="0" thirdDate="2023-11-28" thirdDate-constraint="0" expand="true">
+            <depend id="19" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="19" name="Déploiement" color="#8cb6ce" meeting="false" start="2023-12-22" duration="4" complete="0" thirdDate="2024-01-19" thirdDate-constraint="0" expand="true"/>
+        <task id="20" name="Maintenance" color="#cccccc" meeting="false" start="2023-12-27" duration="23" complete="0" thirdDate="2024-01-23" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Quentin" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Théo" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Laurie" function="Default:0" contacts="" phone=""/>
+        <resource id="3" name="Steven" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="1" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>

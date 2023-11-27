@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2023-11-13" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.2.3230" locale="fr_FR">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2023-11-13" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.1.3100" locale="fr_FR">
     <description/>
     <view zooming-state="default:5" id="gantt-chart">
-        <field id="tpd3" name="Nom" width="200" order="0"/>
+        <field id="tpd3" name="Nom" width="198" order="0"/>
         <field id="tpd4" name="Date de début" width="75" order="1"/>
-        <field id="tpd5" name="Date de fin" width="75" order="2"/>
-        <option id="filter.completedTasks" value="false"/>
+        <field id="tpd5" name="Date de fin" width="74" order="2"/>
         <option id="color.recent">
             <![CDATA[#cccccc #000000 #ff6666 #99ff99 #66ffff]]>
         </option>
@@ -62,8 +61,8 @@
         <task id="18" name="Phase de testing" color="#000000" meeting="false" start="2023-12-04" duration="14" complete="0" thirdDate="2023-11-28" thirdDate-constraint="0" expand="true">
             <depend id="19" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="19" name="Déploiement" color="#8cb6ce" meeting="false" start="2023-12-22" duration="4" complete="0" thirdDate="2024-01-19" thirdDate-constraint="0" expand="true"/>
-        <task id="20" name="Maintenance" color="#cccccc" meeting="false" start="2023-12-27" duration="23" complete="0" thirdDate="2024-01-23" thirdDate-constraint="0" expand="true"/>
+        <task id="19" name="Déploiement" color="#8cb6ce" meeting="false" start="2023-12-22" duration="2" complete="0" thirdDate="2024-01-19" thirdDate-constraint="0" expand="true"/>
+        <task id="20" name="Maintenance" color="#cccccc" meeting="false" start="2023-12-26" duration="24" complete="0" thirdDate="2024-01-23" thirdDate-constraint="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Quentin" function="Default:0" contacts="" phone=""/>

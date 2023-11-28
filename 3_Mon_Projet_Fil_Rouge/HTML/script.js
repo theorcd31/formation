@@ -22,8 +22,10 @@ fav.addEventListener('click', ()=>{
 
 burgerBtn.addEventListener('click', ()=>{
     menuBurger.style.transform = 'translateX(0vw)';
+    
 });
 
 croixBtn.addEventListener('click', ()=>{
     menuBurger.style.transform = 'translateX(100vw)';
 });
+

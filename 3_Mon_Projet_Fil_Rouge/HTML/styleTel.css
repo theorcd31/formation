@@ -53,7 +53,7 @@ body{
     margin-top: -4%;
 }
 
-h1{
+#titrePrincipale{
     margin-top: 3vw;
     font-weight: 400;
     line-height: normal;
@@ -327,6 +327,10 @@ h1{
 /* FOOTER */
 
 footer{
+    position: sticky;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 10vw 2vw 10vw 3vw;
@@ -367,6 +371,11 @@ footer ul{
     display: flex;
     flex-direction: column;
 }
+
+.secondUl :nth-child(1){
+    margin-left: -2vw;
+}
+
 .secondUl li{
     padding-bottom: 2vw;
 }
@@ -386,20 +395,7 @@ footer ul{
     grid-row: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* menu burger */
 
 nav{
     height: 100%;
@@ -513,4 +509,97 @@ nav footer{
 a{
     cursor: none;
     text-decoration: none;
+}
+
+/* fin menu burger */
+
+
+
+/* PAGE ACCUEIL */
+
+.actuality{
+    font-size: 6vw;
+}
+
+#mainAccueil{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgCarousel{
+    height: 100%;
+    width: 100vw;
+    margin-top: -2vh;
+    margin-bottom: 2vh;
+}
+
+.voirPlus{
+    bottom: 50vh;
+    width: 38vw;
+    display: flex;
+    height: 36px;
+    padding: 0px 16px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #F46507;
+    box-shadow: none;
+}
+
+#placementBouton{
+    display: flex;
+    justify-content: center;
+}
+
+#ligne{
+    border-bottom: #000 solid 1px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.titreNosTests{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vw;
+}
+
+.titreNosTests h1{
+    font-size: 6vw;
+}
+
+
+#sectionNosTests{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8vw 1fr 1fr;
+    justify-items: center;
+    position: relative;
+    margin-right: 2vw;
+    margin-bottom: 2vw;
+}
+
+#sectionNosTests h2{
+    grid-column: 1;
+    justify-items: center;
+    margin-bottom: 1vw;
+}
+
+#sectionNosTests img{
+    grid-column: 1;
+    grid-row: 2/4;
+    height: 18vh;
+    width: 25vw
+}
+
+#sectionNosTests p{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#sectionNosTests a{
+    grid-column: 2;
+    grid-row: 3;
+    margin-left: -11.5vw;
+    margin-top: -5vw;
 }

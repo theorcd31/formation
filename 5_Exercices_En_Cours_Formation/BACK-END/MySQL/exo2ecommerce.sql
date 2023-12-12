@@ -9,6 +9,10 @@ prix_produit decimal NOT NULL,
 id_categorie INT
 )Engine=InnoDB;
 
+alter table produit
+modify prix_produit decimal(10,2) NOT NULL;
+
+
 create table categorie(
 id_categorie INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
 nom_categorie VARCHAR(50) NOT NULL

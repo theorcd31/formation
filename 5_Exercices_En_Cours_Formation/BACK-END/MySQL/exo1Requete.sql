@@ -25,6 +25,27 @@ INSERT INTO ticket (date_ticket, id_vendeur)
 VALUES ('2023/12/05 16:55:36', 1), ('2023/12/06 15:45:36', 2), ('2023/12/04 12:15:36', 3),
 ('2023/11/14 13:28:03', 1), ('2023/10/13 14:39:12', 2);
 
+-- maj des tables
+use exo2ecommerce;
+
+-- maj prix +10%
+update produit set prix_produit = prix_produit * 1.10;
+
+-- ajouter nouveu vendeur
+INSERT INTO vendeur(nom_vendeur, prenom_vendeur)
+values ('Schwarzer', 'Julie');
+update vendeur set prenom_vendeur = 'Julien' where id_vendeur = 4;
+
+-- remplacer date du mois de 12 à 11
+update ticket set date_ticket = date_add(date_ticket, interval -1 month) 
+where month(date_ticket) = 12;
+
+-- supprimer le vendeur
+delete from vendeur where id_vendeur = 4;
+
+
+
+
 
 
 

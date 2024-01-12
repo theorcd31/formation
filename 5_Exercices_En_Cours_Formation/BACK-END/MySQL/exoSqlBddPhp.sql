@@ -9,4 +9,4 @@ email_utilisateur VARCHAR(50) NOT NULL,
 password_utilisateur VARCHAR(100) NOT NULL
 );
 
-DROP TABLE utilisateur
+DROP TABLE utilisateur;

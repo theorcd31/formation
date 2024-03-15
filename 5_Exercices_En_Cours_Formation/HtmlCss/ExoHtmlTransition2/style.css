@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: red;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    animation: fadein 2s ease-in-out;
+}
+
+h1:hover{
+    color: green;
+}
+
+p{
+    transition: 2s linear;
+    animation: depliance 1s linear;
+}
+p:active{
+    transform: rotate(720deg);
+}
+
+@keyframes fadein{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes depliance{
+    from{
+        width: 0%;
+        height: 0%;
+    }
+    to{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.btnUn:hover{
+    animation: tremblement 0.2s infinite alternate ;
+}
+
+@keyframes tremblement{
+    from{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    to{
+        transform: rotate(-10deg);
+    }
+}
+

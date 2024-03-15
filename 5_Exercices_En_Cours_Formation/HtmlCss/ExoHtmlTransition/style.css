@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: red;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+h1:hover{
+    color: green;
+}
+
+p{
+    transition: 2s linear;
+}
+p:active{
+    transform: rotate(720deg);
+}
